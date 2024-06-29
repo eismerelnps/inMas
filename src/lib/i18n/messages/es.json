@@ -1,5 +1,24 @@
 {
-  "Index": {
-    "title": "Hello world!"
+  "app": {
+    "home": "Inicio",
+    "store": "Tienda",
+    "providers": "Proveedores",
+    "orders": "Órdenes",
+    "statics": "Estadísticas",
+    "products": "Productos",
+    "name": "Nombre",
+    "description": "Descripción",
+    "category": "Categoría",
+    "price": "Precio",
+    "offerPrice": "Precio de oferta",
+    "stock": "Stock",
+    "photo": "Foto",
+    "um": "UM",
+    "": ""
+  },
+  "unitOfMeasurement": {
+    "pound": "lb",
+    "kg": "kg",
+    "unit": "u"
   }
 }

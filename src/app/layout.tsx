@@ -16,7 +16,7 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
   const messages = await getMessages();
 
   return (
-    <html lang="en">
+    <html lang={locale} className="bg-primary-50 dark:bg-primary-950 text-primary-950 dark:text-primary-50">
       <body className={inter.className}>
         <NextIntlClientProvider messages={messages}>
           {children}
