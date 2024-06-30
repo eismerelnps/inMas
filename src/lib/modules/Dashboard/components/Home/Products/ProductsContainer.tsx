@@ -23,7 +23,7 @@ export default function ProductsContainer({ products }: PropsType) {
       <TableHeader>
         <TableRow>
           <TableHead></TableHead>
-          <TableHead>{intl('name')}</TableHead>
+          <TableHead>{intl('product')}</TableHead>
           <TableHead>{intl('price')}</TableHead>
           <TableHead>{intl('price')}</TableHead>
           <TableHead className="text-right">{intl('stock')}</TableHead>

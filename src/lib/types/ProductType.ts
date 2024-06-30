@@ -1,5 +1,3 @@
-import { ProductUM } from "./ProductUM.enum";
-
 export type ProductType = {
   id: string;
   name: string;

@@ -3,11 +3,11 @@ import { Button } from "@/lib/components/ui/button"
 import Link from "next/link";
 
 export default function DrawerOption({ option }: { option: DrawerOptionType }) {
-  const { icon, heading, url } = option;
+  const { icon, heading, url, active } = option;
   return (
-    <Button asChild>
+    <Button asChild variant={active ? 'secondary' : 'default'}>
       <Link href={url}>
-        <div className="size-full flex justify-start items-center">
+        <div className={` size-full flex justify-start items-center`}>
           <div className="basis-2/12">
             {icon}
           </div>

@@ -1,45 +1,51 @@
 'use client'
 import { DrawerOptionType } from '@/lib/components/Drawer/types/DrawerTypes'
 import DrawerOption from '@/lib/components/Drawer/DrawerOption'
-import { useRouter } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 import { useTranslations } from 'next-intl';
 import { FileTextIcon, HomeIcon, LineChart, Package, StoreIcon, UserIcon, Users2Icon } from 'lucide-react';
 
 
 export default function Drawer() {
-  const intl = useTranslations('app')
+  const intl = useTranslations('app');
+  const path = usePathname()
 
   const options: DrawerOptionType[] = [
     {
       icon: <HomeIcon className='icon' />,
       heading: intl('home'),
       url: '/dashboard/',
+      active: path === '/dashboard'
     },
     {
       icon: <Package className='icon' />,
       heading: intl('products'),
       url: '/dashboard/products',
+      active: path === '/dashboard/products'
     },
     {
       icon: <StoreIcon className='icon' />,
       heading: intl('store'),
       url: '/dashboard/store',
+      active: path === '/dashboard/store'
     },
     {
       icon: <Users2Icon className='icon' />,
       heading: intl("providers"),
       url: '/dashboard/providers',
-
+      active: path === '/dashboard/providers'
     },
     {
       icon: <FileTextIcon className='icon' />,
       heading: intl("orders"),
       url: '/dashboard/orders',
+      active: path === '/dashboard/orders'
     },
     {
       icon: <LineChart className='icon' />,
       heading: intl("statics"),
       url: '/dashboard/statics',
+      active: path === '/dashboard/statics'
     },
   ]
 
