@@ -10,16 +10,39 @@
     "name": "Nombre",
     "description": "Descripción",
     "category": "Categoría",
-    "price": "Precio",
+    "buyPrice": "Precio de compra",
+    "sellPrice": "Precio de venta",
     "offerPrice": "Precio de oferta",
+    "unitOfMeasurement": "Unidad de medida",
+    "currency": "Moneda",
     "stock": "Stock",
+    "buyDate": "Fecha de compra",
+    "expireDate": "Fecha de expiración",
+    "rating": "Evaluación",
+    "price": "Precio",
     "photo": "Foto",
     "um": "UM",
-    "": ""
+    "new_product": "Nuevo producto",
+    "new_product_subtitle": "Complete los campos requeridos. Haga clic en crear cuando haya terminado.",
+    "create_product": "Crear Producto",
+    "beans": "Frijoles negros",
+    "beans_description": "Frijoles negros importados, paquete de 1kg",
+    "grain": "Granos",
+    "this_product_name": "Este será el nombre del producto",
+    "this_product_category": "Categoría del producto",
+    "this_product_description": "Descripción del producto",
+    "category_required": "Inserte la categoría",
+    "incorrect_buy_price": "Precio de compra no válido"
+
   },
   "unitOfMeasurement": {
     "pound": "lb",
     "kg": "kg",
     "unit": "u"
+  },
+  "productValidation": {
+    "name_required": "Inserte el nombre",
+    "category_required": "Inserte la catgoría",
+    "description_too_long": "Categoría del producto muy larga"
   }
 }

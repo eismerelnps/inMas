@@ -1,18 +1,20 @@
 export type ProductType = {
-  id: string;
+  _id: string;
   name: string;
-  description: string;
+  description?: string;
   category: string;
 
+  buyPrice: number;
+  sellPrice?: number;
+  offerPrice?: number;
+
   unitOfMeasurement: 'pound' | 'kg' | 'unit';
+  currency: 'usd' | 'eur' | 'cup';
 
-  price: string;
-  offerPrice?: string;
   stock: number;
-
-  rating?: number;
 
   buyDate: Date;
   expireDate: Date;
 
+  rating?: number;
 }

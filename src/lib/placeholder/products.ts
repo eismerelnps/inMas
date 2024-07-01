@@ -14,34 +14,48 @@ import { ProductType } from "../types/ProductType";
 // }
 
 // const productsList: ProductType[] = Array.from({ length: 10 }, () => generateRandomProduct());
+export const emptyProduct: ProductType = {
+  _id: '',
+  name: '',
+  description: '',
+  category: '',
+  buyPrice: 0,
+  sellPrice: 0,
+  offerPrice: 0,
+  unitOfMeasurement: 'unit',
+  currency: 'cup',
+  stock: 0,
+  buyDate: new Date(),
+  expireDate: new Date(),
+}
 
 export const productsPlaceholder: ProductType[] = [
-  {
-    id: "5b3a4fbf-b17a-415a-a323-4e784234ca27",
-    name: "Arroz Nacional",
-    description: "",
-    category: "Alimentos",
-    unitOfMeasurement: 'kg',
-    price: "180",
-    offerPrice: "178.52",
-    stock: 100,
+  // {
+  //   id: "5b3a4fbf-b17a-415a-a323-4e784234ca27",
+  //   name: "Arroz Nacional",
+  //   description: "",
+  //   category: "Alimentos",
+  //   unitOfMeasurement: 'kg',
+  //   price: "180",
+  //   offerPrice: "178.52",
+  //   stock: 100,
 
-    buyDate: new Date(2024, 6, 1),
-    expireDate: new Date(2025, 6, 1)
-  },
-  {
-    id: "5b3a4fbf-b17a-415a-a323-4e784234ca27",
-    name: "Galletas Artesanales",
-    description: "Sabor Chorizo y Ajo",
-    category: "Confitura",
-    unitOfMeasurement: 'unit',
-    price: "160",
-    offerPrice: undefined,
-    stock: 100,
+  //   buyDate: new Date(2024, 6, 1),
+  //   expireDate: new Date(2025, 6, 1)
+  // },
+  // {
+  //   id: "5b3a4fbf-b17a-415a-a323-4e784234ca27",
+  //   name: "Galletas Artesanales",
+  //   description: "Sabor Chorizo y Ajo",
+  //   category: "Confitura",
+  //   unitOfMeasurement: 'unit',
+  //   price: "160",
+  //   offerPrice: undefined,
+  //   stock: 100,
 
-    buyDate: new Date(2024, 6, 1),
-    expireDate: new Date(2025, 6, 1)
-  },
+  //   buyDate: new Date(2024, 6, 1),
+  //   expireDate: new Date(2025, 6, 1)
+  // },
   // {
   //   id: "5b3a4fbf-b17a-415a-a323-4e784234ca27",
   //   name: "Arroz Brasileño",
